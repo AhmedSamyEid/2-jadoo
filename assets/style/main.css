@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
 :root {
@@ -47,6 +46,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #dddbdb;
+  z-index: 1;
 }
 .container ul {
   display: flex;
@@ -64,10 +64,11 @@ header {
   color: var(--color-Dark);
 }
 
-.but  {
+.but {
   width: 70px;
   height: 30px;
 }
+
 input,
 label {
   display: none;
@@ -106,4 +107,50 @@ label {
     font-size: 20px;
     line-height: 50px;
   }
+  .blob   {
+  display: none;
+  }
+  .hero {
+    max-width: 300px;
+position: relative;
+top: 350px;
+  
+  }
+}
+.containers {
+  display: flex;
+  justify-content: space-around;
+}
+.travel {
+  margin: 100px 0 0 15%;
+}
+.travel h1 {
+  flex-wrap: wrap;
+  font-size: 50px;
+  font-family: var(--font-Volkhov);
+  font-weight: 700;
+  color: var(--color-Blue-Zodiac);
+}
+.travel .best {
+  flex-wrap: wrap;
+  font-family: var(--font-Poppins);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-Terra-Cotta);
+}
+.built {
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 30px;
+  color: var(--color-Dolphin);
+}
+.blob {
+  flex-wrap: wrap;
+  width: 700px;
+  height: 600px;
+  margin: 1px 0 0 10%;
+}
+.hero {
+  margin: -600px 0 0 0;
 }
